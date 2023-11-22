@@ -136,7 +136,7 @@ form button {
 }
 
 .arrow-up:hover {
-  color: #9f3d37;
+  color: #fff;
 }
 
 .attribution {
@@ -146,7 +146,7 @@ form button {
 }
 
 .attribution:hover {
-  color: #9f3d37;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {

@@ -154,7 +154,7 @@ body {
 }
 
 .arrow-up:hover {
-  color: #9f3d37;
+  color: white;
 }
 
 .attribution {
@@ -164,7 +164,7 @@ body {
 }
 
 .attribution:hover {
-  color: #9f3d37;
+  color: white;
   text-decoration: none;
 }
 

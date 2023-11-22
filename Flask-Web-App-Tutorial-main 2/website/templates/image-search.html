@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %} Image {% endblock %}</title>
+    <title>Image Search</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,7 +25,11 @@
     <!--Nav-->
     <nav class="navbar navbar-expand-lg" style="background-color: #9f3d37">
       <div class="container">
-        <a class="navbar-brand text-white fw-bold" href="#">Navbar scroll</a>
+        <a
+          class="navbar-brand text-white fw-bold"
+          href="{{ url_for('views.home') }}"
+          >ProdHub</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -47,7 +51,7 @@
               <a
                 class="nav-link active text-white"
                 aria-current="page"
-                href="#index.html"
+                href="{{ url_for('views.home') }}"
                 >Home</a
               >
             </li>
@@ -64,8 +68,19 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">ToDO List</a></li>
-                <li><a class="dropdown-item" href="#">Sticky Notes</a></li>
-                <li><a class="dropdown-item" href="#">Image Search</a></li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('views.sticky') }}"
+                    >Sticky Notes</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{{ url_for('views.image_search') }}"
+                    >Image Search</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="/logout">Log Out</a>

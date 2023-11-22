@@ -65,8 +65,3 @@ def sign_up():
 
     return render_template("sign_up.html", user=current_user)
 
-@auth.route('/image-search')
-@login_required
-def image_search():
-    
-    return render_template('auth.image-search.html')
